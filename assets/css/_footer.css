@@ -1,0 +1,30 @@
+
+/* FOOTER */
+footer {
+  background-color: var(--branco);
+  padding: 4rem 0px 2rem 0px;
+}
+footer .logo img {
+  width: 15rem;
+}
+footer .social-midias {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+footer .social-midias img {
+  height: 2.5rem;
+}
+footer h6 {
+  text-transform: uppercase;
+  color: var(--roxo-500);
+}
+footer ul li {
+  font-size: 1.4rem;
+}
+.linkFoorter{
+  text-decoration: none;
+
+}

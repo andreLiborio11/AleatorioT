@@ -1,0 +1,732 @@
+
+/* ATENDIMENTO */
+section.atendimento .topo-degrade-roxo {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(133, 22, 135, 1) 100%
+    ),
+    url("/static/atendimento-topo.png");
+  background-size: 100% 100%;
+}
+section.atendimento .menu-atendimento {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  justify-content: start;
+}
+section.atendimento .menu-atendimento .item {
+  display: grid;
+  grid-template-rows: 8rem auto;
+  align-items: center;
+  gap: 1rem;
+}
+section.atendimento form textarea {
+  min-height: 15rem;
+}
+section.atendimento .menu-atendimento img {
+  width: 8rem;
+}
+@media screen and (max-width: 991px) {
+  section.atendimento h1 {
+    text-align: center;
+  }
+  section.atendimento .menu-atendimento {
+    justify-content: center;
+    margin: 2rem 0;
+  }
+}
+
+/* DETALHES DO CURSO */
+section.detalhes-curso .curso {
+  border-radius: var(--radius);
+  margin-right: 2rem;
+  background-color: var(--branco);
+  overflow: hidden;
+  filter: var(--sombra-roxa);
+  margin-bottom: 2rem;
+}
+section.detalhes-curso .curso .foto-curso {
+  max-width: 100%;
+}
+section.detalhes-curso .curso .titulo-curso {
+  padding: 2rem 3rem;
+}
+section.detalhes-curso .curso h6 {
+  color: var(--cinza-100);
+}
+
+section.detalhes-curso .informacao-adicional {
+  display: grid;
+  grid-template-columns: 3rem auto;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+section.detalhes-curso .descricao-curso {
+  background-color: var(--branco);
+  filter: var(--sombra-roxa);
+  border-radius: var(--radius);
+  padding: 2rem 3rem;
+}
+section.detalhes-curso .descricao-curso .nota,
+section.detalhes-curso .descricao-curso .carga-horaria {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+section.detalhes-curso .descricao-curso .nota img,
+section.detalhes-curso .descricao-curso .carga-horaria img {
+  height: 3rem;
+}
+section.detalhes-curso .descricao-curso .nota p,
+section.detalhes-curso .descricao-curso .carga-horaria p {
+  font-weight: 700;
+}
+section.detalhes-curso .descricao-curso .nota p span {
+  font-weight: 400;
+}
+section.detalhes-curso .descricao-curso ul li {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1.7rem auto;
+  gap: 0.3rem;
+}
+section.detalhes-curso .descricao-curso ul li::before {
+  content: " ";
+  display: inline-block;
+  background: var(--laranja-100);
+  margin-top: 0.7rem;
+  border-radius: var(--radius-100);
+  width: 1rem;
+  height: 1rem;
+}
+section.detalhes-curso .descricao-curso p.preco {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--laranja-100);
+  font-weight: 800;
+}
+section.detalhes-curso .descricao-curso .btn-verde {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+}
+section.detalhes-curso .descricao-curso .btn-verde img {
+  height: 2rem;
+}
+section.conteudo-tutor .conteudo-curso {
+  padding: 5rem;
+  background: #fff;
+  margin-right: 2rem;
+  border-radius: var(--radius);
+  filter: var(--sombra-roxa);
+  margin-bottom: 1.5rem;
+}
+section.conteudo-tutor .tutor {
+  position: relative;
+}
+section.conteudo-tutor .tutor .foto-tutora {
+  margin: 1rem 0px;
+  height: 30rem;
+}
+section.conteudo-tutor .tutor h2 {
+  position: absolute;
+  top: 6rem;
+  left: 22rem;
+}
+section.conteudo-tutor .tutor .nome-formacao {
+  position: absolute;
+  top: 22rem;
+  left: 22rem;
+}
+section.conteudo-tutor .tutor .nome-formacao p {
+  line-height: 1.2;
+}
+section.certificado-prova .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+}
+section.certificado-prova .titulo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+section.certificado-prova .titulo img {
+  height: 7rem;
+}
+
+.modal-oferta-relampago .modal-header {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  background: var(--roxo-50);
+}
+.modal-oferta-relampago .modal-header img {
+  height: 2rem;
+  margin: 0 1rem;
+}
+.modal-oferta-relampago .modal-body {
+  padding: 2rem;
+  text-align: center;
+}
+.modal-oferta-relampago .modal-body .titulo {
+  color: var(--cinza-100);
+}
+.modal-oferta-relampago .modal-body .preco {
+  font-weight: 700;
+  font-size: 4rem;
+  padding: 1rem;
+  color: var(--laranja-100);
+}
+.modal-oferta-relampago .modal-footer {
+  justify-content: center;
+}
+.modal-oferta-relampago .modal-footer .btn-lilas,
+.modal-oferta-relampago .modal-footer .btn-verde {
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+}
+@media screen and (max-width: 991px) {
+  section.certificado-prova .box {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  section.conteudo-tutor .conteudo-curso,
+  section.detalhes-curso .curso {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.conteudo-tutor .tutor {
+    text-align: center;
+  }
+  section.conteudo-tutor .tutor h2 {
+    position: unset;
+  }
+  section.conteudo-tutor .tutor .nome-formacao {
+    margin-top: 1rem;
+    position: unset;
+  }
+  section.certificado-prova .titulo {
+    display: grid;
+  }
+  section.detalhes-curso .descricao-curso ul li {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  section.detalhes-curso .descricao-curso p.preco {
+    font-size: 3rem;
+  }
+  section.certificado-prova .titulo img {
+    height: 6rem;
+    margin-bottom: 1rem;
+  }
+  section.conteudo-tutor .tutor .foto-tutora {
+    margin: 1rem 0px;
+    height: 25rem;
+  }
+  .modal-oferta-relampago .modal-body .preco {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  section.detalhes-curso .descricao-curso ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  section.certificado-prova .box {
+    gap: 3rem;
+  }
+  section.detalhes-curso .descricao-curso p.preco {
+    font-size: 2.5rem;
+  }
+}
+
+/* QUEM SOMOS */
+section.quem-somos .topo-degrade-roxo {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(133, 22, 135, 1) 100%
+    ),
+    url("/static/quem-somos-topo.png");
+  background-size: 100% 100%;
+}
+section.quem-somos .box-institucional {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+section.quem-somos .box-institucional .icone {
+  width: 5rem;
+}
+section.quem-somos .box-oque-dizem {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+section.quem-somos .box-oque-dizem .box.abed {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/3;
+}
+section.quem-somos .box-diferenciais {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+section.quem-somos .box-diferenciais .titulo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+section.quem-somos .box-diferenciais .titulo img {
+  height: 7rem;
+}
+section.quem-somos .nao-perca {
+  margin-top: 6rem;
+  display: grid;
+  justify-content: center;
+}
+section.quem-somos .nao-perca .btn-verde {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 767px) {
+  section.quem-somos .box-oque-dizem,
+  section.quem-somos .box-diferenciais,
+  section.quem-somos .box-institucional {
+    grid-template-columns: 1fr;
+  }
+  section.quem-somos .box-oque-dizem .box.abed {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.quem-somos .box-diferenciais {
+    gap: 1.5rem;
+  }
+  section.quem-somos .nao-perca .btn-verde {
+    font-size: 1.5rem;
+  }
+}
+
+/* POLITICA DE PRIVACIDADE */
+section.politica-privacidade .topo-degrade-roxo {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(133, 22, 135, 1) 100%
+    ),
+    url("/static/politica-privacidade-topo.png");
+  background-size: 100% 100%;
+}
+section.politica-privacidade .box-diferenciais {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+section.politica-privacidade .box-diferenciais img {
+  height: 5rem;
+}
+section.politica-privacidade .box-coleta .box {
+  margin-bottom: 5rem;
+}
+section.politica-privacidade .box-coleta .titulo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+section.politica-privacidade .box-coleta .titulo img {
+  height: 7rem;
+}
+section.politica-privacidade .box-coleta p {
+  margin-bottom: 2rem;
+}
+section.politica-privacidade .nao-perca .btn-verde {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 767px) {
+  section.politica-privacidade .box-diferenciais {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  section.politica-privacidade .box-coleta .titulo {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+  section.politica-privacidade .box-coleta {
+    text-align: center;
+  }
+  section.politica-privacidade .nao-perca .btn-verde {
+    font-size: 1.5rem;
+  }
+}
+
+/* TERMOS DE COMPROMISSO */
+section.termo-compromisso .topo-degrade-roxo {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(133, 22, 135, 1) 100%
+    ),
+    url("/static/termo-compromisso-topo.png");
+  background-size: 100% 100%;
+}
+section.termo-compromisso p.grande {
+  margin-bottom: 2rem;
+}
+section.termo-compromisso .termo {
+  border-radius: 2rem;
+  border: 3px solid var(--cinza-50);
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+}
+section.termo-compromisso .nao-perca .btn-verde {
+  font-size: 2.5rem;
+  padding: 1.5rem 10rem;
+}
+@media screen and (max-width: 575px) {
+  section.termo-compromisso .nao-perca .btn-verde {
+    font-size: 1.3rem;
+    padding: 1rem 5rem;
+  }
+}
+
+/* CONFIABILIDADE */
+section.confiabilidade .topo-degrade-roxo {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(133, 22, 135, 1) 100%
+    ),
+    url("/static/confiabilidade-topo.png");
+  background-size: 100% 100%;
+}
+section.confiabilidade .box-certificados {
+  display: grid;
+  align-items: flex-start;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+section.confiabilidade .box-certificados .box-certificado {
+  padding: 3rem;
+}
+section.confiabilidade .box-certificados .box-certificado .titulo {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+}
+section.confiabilidade .box-certificados .box-certificado .titulo img {
+  height: 7rem;
+}
+section.confiabilidade .box-diferenciais {
+  margin-bottom: 2rem;
+  padding: 4rem;
+}
+section.confiabilidade .box-diferenciais .titulo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+section.confiabilidade .box-diferenciais .titulo img {
+  height: 7rem;
+}
+section.confiabilidade img.parceiros {
+  margin: 3rem 0;
+}
+section.confiabilidade .btn-verde {
+  margin: 2rem 0;
+  padding: 1rem 10rem;
+  display: inline-block;
+  font-size: 2rem;
+}
+section.confiabilidade .empresa-100 {
+  text-align: right;
+}
+@media screen and (max-width: 991px) {
+  section.confiabilidade .box-certificados {
+    grid-template-columns: 1fr;
+  }
+  section.confiabilidade .desde-2004,
+  section.confiabilidade .empresa-100 {
+    text-align: center !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.confiabilidade h1 {
+    font-size: 2.5rem;
+  }
+  section.confiabilidade .btn-verde {
+    font-size: 1.5rem;
+  }
+}
+
+/* QUERO SER TUTOR */
+section.quero-ser-tutor .topo h1,
+section.quero-ser-tutor .topo h6,
+section.quero-ser-tutor .topo p {
+  color: var(--branco);
+}
+section.quero-ser-tutor .topo img {
+  margin-bottom: -3rem;
+}
+section.quero-ser-tutor .sessao-1 img {
+  width: 60%;
+}
+section.quero-ser-tutor .sessao-1 {
+  text-align: end;
+}
+section.quero-ser-tutor h3.cinza {
+  color: var(--cinza-100);
+}
+
+@media screen and (max-width: 767px) {
+  section.quero-ser-tutor .sessao-1,
+  section.quero-ser-tutor .sessao-2 {
+    text-align: center;
+  }
+  section.quero-ser-tutor .sessao-2 form {
+    margin-top: 3rem;
+    text-align: left;
+  }
+}
+
+/* COMO FUNCIONA */
+.como-funciona .topo-degrade-roxo {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(133, 22, 135, 1) 100%
+    ),
+    url("/static/como-funciona-topo.png");
+  background-size: 100% 100%;
+}
+.como-funciona .passos {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+}
+.como-funciona .passos .passo .n-passo {
+  position: absolute;
+  font-size: 700;
+  color: var(--branco);
+  line-height: 0;
+  height: 8rem;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 4rem;
+  border-radius: 100%;
+  background-color: var(--roxo-500);
+  left: -3rem;
+  top: -1rem;
+}
+.como-funciona .passos .passo {
+  position: relative;
+  background-color: var(--branco);
+  border-radius: var(--radius-30);
+  padding: 2rem 2rem 2rem 6rem;
+}
+.como-funciona .tempo-conclusao {
+  display: grid;
+  grid-template-columns: auto 12rem auto;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 2rem;
+}
+.como-funciona .tempo-conclusao img {
+  height: 5rem;
+}
+.como-funciona .box-vantagens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  gap: 2rem;
+}
+.como-funciona .box-vantagens .vantagem .box-branco {
+  margin: 1rem 0;
+  width: 15rem;
+}
+.como-funciona .box-vantagens .vantagem img {
+  height: 10rem;
+}
+.como-funciona .nao-perca {
+  margin-top: 4rem;
+}
+.como-funciona .nao-perca .btn-verde {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 991px) {
+  .como-funciona .passos {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .como-funciona .box-vantagens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 575px) {
+  .como-funciona .passos .passo .n-passo {
+    position: absolute;
+    font-size: 700;
+    color: var(--branco);
+    line-height: 0;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 3rem;
+    border-radius: 100%;
+    background-color: var(--roxo-500);
+    left: -1rem;
+    top: -1rem;
+  }
+  .como-funciona .tempo-conclusao {
+    display: block;
+  }
+  .como-funciona .nao-perca .btn-verde {
+    font-size: 1.5rem;
+  }
+  .como-funciona .box-vantagens .vantagem img {
+    height: 7rem;
+  }
+}
+
+/* FAQ */
+section.faq .topo-degrade-roxo {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(133, 22, 135, 1) 100%
+    ),
+    url("/static/faq-topo.png");
+  background-size: 100% 100%;
+}
+section.faq .btn-verde {
+  margin: 1.5rem auto;
+  width: 70%;
+  font-size: 1.7rem;
+}
+section.faq .menu-duvidas {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+section.faq .menu-duvidas .item {
+  padding: 0.5rem;
+}
+section.faq a.laranja {
+  font-size: 1.5rem;
+  color: var(--laranja-900);
+}
+@media screen and (max-width: 767px) {
+  section.faq .menu-duvidas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 575px) {
+  section.faq .menu-duvidas {
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* VERIFICAR AUTENTICIDADE */
+section.verificar-autenticidade form input {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 2rem 0;
+  border-style: solid;
+  border-color: var(--cinza-50);
+  border-color: var(--cinza-50);
+}
+section.verificar-autenticidade form input::placeholder {
+  border-color: var(--cinza-50);
+  text-align: center;
+}
+section.verificar-autenticidade form .btn-verde {
+  font-size: 1.7rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* AREA DO TUTOR */
+.sessao-tutor {
+  min-height: 90vh;
+}
+.sessao-tutor .box {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  gap: 3rem;
+}
+.sessao-tutor .box .nome-tutor {
+  background: var(--roxo-500);
+  padding: 9rem 3rem;
+  border-radius: 2rem;
+}
+.sessao-tutor .box .nome-tutor h2 {
+  color: var(--branco);
+}
+.sessao-tutor .box .btns {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, calc(50% - 0.5rem));
+  gap: 1rem;
+}
+.sessao-tutor .box .btns a {
+  width: 100%;
+  height: 100%;
+  min-height: 10rem;
+  filter: var(--sombra-roxa);
+  background-color: var(--branco);
+  border-radius: 2rem;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 7rem auto;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 700;
+  color: var(--roxo-500);
+  padding: 1rem 3rem;
+}
+.sessao-tutor .box .btns a img {
+  height: 5rem;
+  max-width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .sessao-tutor .box {
+    grid-template-columns: 1fr;
+  }
+  .sessao-tutor .box .nome-tutor {
+    background: var(--roxo-500);
+    padding: 6rem 3rem;
+  }
+}

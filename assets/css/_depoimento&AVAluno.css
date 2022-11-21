@@ -1,0 +1,96 @@
+
+/*DEPOIMENTOS*/
+.slides-depoimentos {
+  margin: 5rem 0;
+}
+.slides-depoimentos .depoimento {
+  margin: 0 3rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  background: var(--branco);
+}
+.slides-depoimentos .depoimento .video img {
+  max-width: 100%;
+}
+.slides-depoimentos .depoimento .info {
+  text-align: left;
+  padding: 2rem;
+}
+@media screen and (max-width: 575px) {
+  .slides-depoimentos {
+    margin: 2rem 0 0 0;
+  }
+}
+
+/* AVALIAÇÃO ALUNO */
+section.avaliacoes-alunos .container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+section.avaliacoes-alunos .slides-avaliacoes-alunos .box-avaliacao {
+  background: #fff;
+  border-radius: 2.5rem;
+  margin: 1.5rem;
+  padding: 2.5rem;
+  filter: var(--sombra);
+}
+section.avaliacoes-alunos .slides-avaliacoes-alunos .box-avaliacao .cabecalho {
+  display: grid;
+  grid-template-columns: 8.5rem auto;
+  align-items: center;
+  column-gap: 1rem;
+}
+section.avaliacoes-alunos
+  .slides-avaliacoes-alunos
+  .box-avaliacao
+  .cabecalho
+  h6 {
+  margin-bottom: 0px;
+}
+section.avaliacoes-alunos
+  .slides-avaliacoes-alunos
+  .box-avaliacao
+  .cabecalho
+  .foto {
+  width: 8.5rem;
+}
+section.avaliacoes-alunos .slides-avaliacoes-alunos .box-avaliacao .avaliacao {
+  display: grid;
+  margin-top: 1.5rem;
+}
+section.avaliacoes-alunos
+  .slides-avaliacoes-alunos
+  .box-avaliacao
+  .avaliacao
+  p {
+  line-height: 1.2;
+  margin-bottom: 0px;
+  padding-left: 1rem;
+}
+section.avaliacoes-alunos
+  .slides-avaliacoes-alunos
+  .box-avaliacao
+  .avaliacao
+  .aspas {
+  height: 2rem;
+}
+section.avaliacoes-alunos
+  .slides-avaliacoes-alunos
+  .box-avaliacao
+  .avaliacao
+  .aspas.invertida {
+  justify-self: end;
+}
+button.control img {
+  height: 5rem;
+}
+@media screen and (max-width: 1199px) {
+  section.avaliacoes-alunos .container {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.avaliacoes-alunos .glider-contain {
+    margin: 0px 0px;
+  }
+}

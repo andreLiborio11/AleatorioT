@@ -1,0 +1,214 @@
+
+/* TUTORES */
+section.tutores .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+section.tutores .swiper-slide .box-tutores {
+  width: 80%;
+}
+section.tutores .swiper-slide .box-tutores .foto {
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+}
+
+/*TUTOR*/
+section.conteudo-tutor .conteudo-curso {
+  padding: 5rem;
+  background: #fff;
+  margin-right: 2rem;
+  border-radius: var(--radius);
+  filter: var(--sombra-roxa);
+  margin-bottom: 1.5rem;
+}
+section.conteudo-tutor .tutor {
+  position: relative;
+}
+section.conteudo-tutor .tutor .foto-tutora {
+  margin: 1rem 0px;
+  height: 30rem;
+}
+section.conteudo-tutor .tutor h2 {
+  position: absolute;
+  top: 6rem;
+  left: 22rem;
+}
+section.conteudo-tutor .tutor .nome-formacao {
+  position: absolute;
+  top: 22rem;
+  left: 22rem;
+}
+section.conteudo-tutor .tutor .nome-formacao p {
+  line-height: 1.2;
+}
+section.certificado-prova .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+}
+section.certificado-prova .titulo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+section.certificado-prova .titulo img {
+  height: 7rem;
+}
+@media screen and (max-width: 991px) {
+  section.certificado-prova .box {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  section.conteudo-tutor .conteudo-curso,
+  section.detalhes-curso .curso {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.conteudo-tutor .tutor {
+    text-align: center;
+  }
+  section.conteudo-tutor .tutor h2 {
+    position: unset;
+  }
+  section.conteudo-tutor .tutor .nome-formacao {
+    margin-top: 1rem;
+    position: unset;
+  }
+  section.certificado-prova .titulo {
+    display: grid;
+  }
+  section.detalhes-curso .descricao-curso ul li {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  section.detalhes-curso .descricao-curso p.preco {
+    font-size: 3rem;
+  }
+  section.certificado-prova .titulo img {
+    height: 6rem;
+    margin-bottom: 1rem;
+  }
+  section.conteudo-tutor .tutor .foto-tutora {
+    margin: 1rem 0px;
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  section.detalhes-curso .descricao-curso ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  section.certificado-prova .box {
+    gap: 3rem;
+  }
+  section.detalhes-curso .descricao-curso p.preco {
+    font-size: 2.5rem;
+  }
+}
+
+/* EXTRATO TUTOR */
+.sessao-extrato .lista-grafico {
+  display: flex;
+  gap: 0.5rem;
+}
+.sessao-extrato .lista-grafico .icone {
+  font-size: unset;
+  background: var(--roxo-100);
+  padding: 0.8rem;
+  border-radius: 100%;
+}
+.sessao-extrato .lista-grafico .icone img {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(72%) saturate(3611%)
+    hue-rotate(287deg) brightness(90%) contrast(98%);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.sessao-extrato .lista-grafico .icone:hover,
+.sessao-extrato .lista-grafico .icone.ativo {
+  background: linear-gradient(to left, var(--laranja-100), var(--laranja-900));
+  padding: 0.8rem;
+  border-radius: 100%;
+}
+.sessao-extrato .lista-grafico .icone:hover img,
+.sessao-extrato .lista-grafico .icone.ativo img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(6deg) brightness(104%) contrast(102%);
+}
+.sessao-extrato select.periodo {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+}
+.sessao-extrato .box-extratos {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0rem;
+  background-color: var(--branco);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+.sessao-extrato .box-extratos p.titulo {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--roxo-500);
+  line-height: 1;
+}
+.sessao-extrato .box-extratos p.titulo span {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.sessao-extrato .box-extratos .extrato {
+  padding: 2rem 1.5rem;
+  filter: var(--sombra-leve);
+  width: 100%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 3fr repeat(6, 1fr);
+  background-color: var(--branco);
+  border-radius: var(--radius);
+}
+.sessao-extrato .box-extratos .extrato .box-dado {
+  display: grid;
+  grid-template-rows: 3rem auto;
+}
+.sessao-extrato .box-extratos .extrato.total-extratos {
+  background: var(--roxo-50);
+}
+.sessao-extrato .box-extratos .extrato.total-extratos .total .titulo {
+  font-size: 2rem;
+}
+.sessao-extrato .extrato-grafico {
+  margin: 1rem 0rem;
+  background-color: var(--branco);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+.sessao-extrato .extrato-grafico h6 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.sessao-extrato .extrato-grafico img.grafico-exemplo {
+  width: 30rem;
+  max-width: 100%;
+}
+.sessao-extrato .extrato-grafico .menu-opcoes-visualizacao {
+  width: fit-content;
+  display: grid;
+  gap: 1rem;
+  margin: 2rem;
+}
+.sessao-extrato .extrato-grafico .menu-opcoes-visualizacao .btn-branco {
+  font-size: 1.3rem;
+}
+.sessao-extrato .extrato-grafico .legenda p {
+  font-size: 1.3rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}

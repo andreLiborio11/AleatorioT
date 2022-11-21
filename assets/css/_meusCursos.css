@@ -1,0 +1,196 @@
+
+/* MEUS CURSOS */
+.meusCuros{
+  height: 100vh;
+}
+.sessao-meus-cursos .box-cursos {
+  margin: 1.5rem 0rem;
+}
+.sessao-meus-cursos .box-cursos .lista-cursos {
+  margin: 2rem 0rem 1rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.sessao-meus-cursos .box-cursos .lista-cursos .curso {
+  border-radius: var(--radius);
+  background-color: var(--branco);
+  overflow: hidden;
+}
+.sessao-meus-cursos .box-cursos .lista-cursos .curso .foto-curso {
+  max-width: 100%;
+}
+.sessao-meus-cursos .box-cursos .lista-cursos .curso .sobre {
+  padding: 1rem;
+}
+.sessao-meus-cursos h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.sessao-meus-cursos .box-cursos .lista-cursos .curso p.carga-horaria {
+  margin: 1rem 0rem;
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sessao-meus-cursos .box-cursos .lista-cursos .curso p.carga-horaria img {
+  height: 2.3rem;
+}
+.sessao-meus-cursos .btn-cinza {
+  font-size: 1.3rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.sessao-meus-cursos .btn-cinza img {
+  height: 1.3rem;
+}
+@media screen and (max-width: 1199px) {
+  .sessao-meus-cursos .box-cursos .lista-cursos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 991px) {
+  .sessao-meus-cursos .btn-cinza {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sessao-meus-cursos .box-cursos .lista-cursos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 575px) {
+  .sessao-meus-cursos h6 {
+    font-size: 1.4rem;
+  }
+  .sessao-meus-cursos .box-cursos .lista-cursos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CURSOS ONLINE */
+section.cursos-online .lista-cursos {
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+section.cursos-online .menu-lista-cursos .select-categorias {
+  display: none;
+}
+section.cursos-online .menu-lista-cursos select,
+section.cursos-online .menu-lista-cursos option {
+  border-radius: var(--radius);
+  padding: 1rem;
+  width: 100%;
+  border: none;
+}
+section.cursos-online .menu-lista-cursos .lista-categorias {
+  background-color: var(--branco);
+  filter: var(--sombra-roxa);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+section.cursos-online .menu-lista-cursos .lista-categorias ul {
+  margin: 1rem 0px;
+}
+section.cursos-online .menu-lista-cursos .lista-categorias ul li {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--cinza-100);
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 0px;
+}
+section.cursos-online .menu-lista-cursos .lista-categorias ul li:hover {
+  cursor: pointer;
+  background: var(--gradient-laranja);
+}
+section.cursos-online .cursos-selecionados {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+section.cursos-online .cursos-selecionados .curso {
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--branco);
+  border-radius: var(--radius);
+}
+section.cursos-online .cursos-selecionados .curso .foto-curso {
+  max-width: 100%;
+}
+section.cursos-online .cursos-selecionados .curso .sobre-curso {
+  padding: 1rem;
+}
+section.cursos-online .cursos-selecionados .curso .sobre-curso .titulo-curso {
+  color: var(--roxo-500);
+  font-weight: 800;
+  line-height: 1.1;
+  font-size: 1.5rem;
+}
+section.cursos-online
+  .cursos-selecionados
+  .curso
+  .sobre-curso
+  .carga-horaria-avaliacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+section.cursos-online
+  .cursos-selecionados
+  .curso
+  .sobre-curso
+  .carga-horaria-avaliacao
+  p {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+section.cursos-online
+  .cursos-selecionados
+  .curso
+  .sobre-curso
+  .carga-horaria-avaliacao
+  img {
+  height: 2.3rem;
+}
+section.cursos-online .cursos-selecionados .curso .sobre-curso .carga-horaria {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+section.cursos-online .cursos-selecionados .curso .sobre-curso .btn-verde {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  section.cursos-online .cursos-selecionados {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.cursos-online .cursos-selecionados {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.cursos-online .lista-cursos {
+    grid-template-columns: 1fr;
+  }
+  section.cursos-online .menu-lista-cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  section.cursos-online .menu-lista-cursos .lista-categorias {
+    display: none;
+  }
+  section.cursos-online .menu-lista-cursos .select-categorias {
+    display: block;
+  }
+}

@@ -1,0 +1,136 @@
+
+/* GLIDER */
+.glider-container {
+  display: grid;
+  grid-template-columns: 30px calc(100% - 60px) 30px;
+}
+.glider-control,
+.glider-control {
+  align-self: center;
+  justify-content: center;
+}
+.glider-control img,
+.glider-control img {
+  width: 2rem;
+}
+.glider-dot {
+  background: linear-gradient(to left, var(--laranja-900), var(--laranja-100));
+  opacity: 0.5;
+}
+.glider-dot.active,
+.glider-dot:hover {
+  background: linear-gradient(to left, var(--laranja-900), var(--laranja-100));
+  opacity: 1;
+}
+.glider-dots {
+  margin-top: 15px;
+}
+/*  */
+@media screen and (max-width: 991px) {
+  .topo-degrade-roxo {
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .topo-degrade-roxo {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .margin-logado {
+    padding: 8rem 0rem 8rem 0rem;
+  }
+  select,
+  option {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .topo-degrade-roxo {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 3.3rem;
+  }
+  h3 {
+    font-size: 2.7rem;
+  }
+  h5 {
+    font-size: 2.3rem;
+  }
+  select {
+    font-size: 1.2rem;
+  }
+  .modal-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  p.grande {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  p.grande {
+    font-size: 1.3rem;
+  }
+  .topo-degrade-roxo {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2.3rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  p.subtitulo {
+    font-size: 1.2rem;
+  }
+
+  p.titulo {
+    font-size: 1.4rem;
+  }
+  .form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5rem;
+  }
+  label.form-check-label {
+    font-size: 1.2rem;
+  }
+}
+/* VOLTAR*/
+.sessao-voltar .btn-voltar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--laranja-900);
+}
+.sessao-voltar .btn-voltar img {
+  height: 4rem;
+}
+@media screen and (max-width: 575px) {
+  .sessao-voltar .btn-voltar img {
+    height: 3rem;
+  }
+  .sessao-voltar .btn-voltar {
+    font-size: 1.4rem;
+  }
+}

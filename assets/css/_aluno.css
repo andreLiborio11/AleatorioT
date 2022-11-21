@@ -1,0 +1,220 @@
+
+/* VIDEO AULAS */
+.sessao-video-aulas{
+  height: 100vh;
+}
+.sessao-video-aulas .box-video-aulas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0rem;
+}
+.sessao-video-aulas .box-video-aulas .video-aula {
+  border-radius: var(--radius);
+  background-color: var(--branco);
+  filter: var(--sombra-leve);
+  overflow: hidden;
+}
+.sessao-video-aulas .box-video-aulas .video-aula .thumb-aula {
+  width: 100%;
+}
+.sessao-video-aulas .box-video-aulas .video-aula .titulo-aula {
+  padding: 1rem;
+}
+.sessao-video-aulas .box-video-aulas .video-aula .titulo-aula h6 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .sessao-video-aulas .box-video-aulas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 575px) {
+  .sessao-video-aulas .box-video-aulas {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* AVALIAÇÃO */
+.sessao-avaliacao{
+  height: 100vh;
+}
+.sessao-avaliacao h3,
+.sessao-avaliacao p.subtitulo {
+  text-align: center;
+}
+.sessao-avaliacao .box-prova {
+  margin: 2rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.sessao-avaliacao .box-prova p.questao {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.sessao-avaliacao .box-prova .btn-verde {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: fit-content;
+  font-size: 1.3rem;
+}
+.sessao-avaliacao .box-prova .btn-verde img {
+  height: 1.5rem;
+}
+.sessao-avaliacao .box-prova .box-alternativas .btn-verde {
+  margin-top: 1rem;
+}
+#modal-confirmar-avaliacao .modal-header {
+  margin: 2rem 1rem 0rem 1rem;
+  justify-content: center !important;
+}
+#modal-confirmar-avaliacao {
+  text-align: center;
+}
+#modal-confirmar-avaliacao .modal-footer {
+  justify-content: center;
+}
+#modal-confirmar-avaliacao .modal-footer .btn-verde {
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .sessao-avaliacao .box-prova {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+}
+
+/* MATRICULAS */
+.sessao-matriculas{
+  height: 100vh;
+}
+.sessao-matriculas .matriculas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.sessao-matriculas .matriculas p {
+  font-size: 1.4rem;
+}
+.sessao-matriculas .matriculas .informacoes {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  margin-top: 1rem;
+  row-gap: 1rem;
+}
+.sessao-matriculas .matriculas .tag {
+  font-size: 1.2rem;
+}
+.sessao-matriculas .matriculas .btn-lilas {
+  grid-column: 1/3;
+  width: 100%;
+  padding: 0.5rem;
+}
+.sessao-matriculas .cursos {
+  margin: 2rem 0rem 1rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.sessao-matriculas .cursos .curso {
+  border-radius: var(--radius);
+  background-color: var(--branco);
+  overflow: hidden;
+}
+.sessao-matriculas .cursos .curso .foto-curso {
+  max-width: 100%;
+}
+.sessao-matriculas .cursos .curso h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.sessao-matriculas .cursos .curso .sobre {
+  padding: 1rem;
+}
+.sessao-matriculas .cursos .curso p.carga-horaria {
+  margin: 1rem 0rem;
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sessao-matriculas .cursos .curso p.carga-horaria img {
+  height: 2.3rem;
+}
+.sessao-matriculas .cursos .btn-cinza {
+  font-size: 1.3rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.sessao-matriculas .cursos .btn-cinza img {
+  height: 1.3rem;
+}
+@media screen and (max-width: 1199px) {
+  .sessao-matriculas .cursos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 991px) {
+  .sessao-matriculas .cursos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sessao-matriculas .matriculas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .sessao-matriculas .matriculas {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 575px) {
+  .sessao-matriculas .cursos .curso h6 {
+    font-size: 1.4rem;
+  }
+  .sessao-matriculas .cursos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MINHA CONTA */
+.sessao-minha-conta{
+  height: 100vh;
+}
+.sessao-minha-conta p.tempo-restante {
+  background-color: var(--laranja-50);
+  color: var(--laranja-900);
+  font-weight: 700;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  margin: 2rem 0rem;
+}
+.sessao-minha-conta .box-menu {
+  margin: 5rem 0;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.sessao-minha-conta .box-menu .botao img {
+  margin-bottom: 1rem;
+  height: 8rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+.sessao-minha-conta .box-menu .botao h6 {
+  font-weight: 700;
+}
+.sessao-minha-conta .btn-sair {
+  grid-column: 1/3;
+  justify-self: center;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+}
+.sessao-minha-conta .btn-sair img {
+  height: 3rem;
+}

@@ -1,0 +1,361 @@
+
+/*SESSAO CARRINHO*/
+section.carrinho .container {
+  min-height: 90vh;
+}
+/*FIM SESSAO CARRINHO*/
+/*CARRINHO OFERTA PLUS*/
+.sessao-ofertas-plus{
+  height: 100vh;
+}
+.sessao-ofertas-plus h6 {
+  margin-bottom: 2rem;
+}
+.sessao-ofertas-plus .ofertas {
+  margin-bottom: 1rem;
+}
+.sessao-ofertas-plus .ofertas .itens {
+  max-height: 50rem;
+  overflow-y: scroll;
+}
+
+.sessao-ofertas-plus .ofertas .item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  overflow: hidden;
+  filter: var(--sombra-roxa);
+  border-radius: 2rem;
+  position: relative;
+  margin: 1.5rem;
+}
+.sessao-ofertas-plus .ofertas .item .thumb-item {
+  max-height: 15rem;
+  overflow: hidden;
+
+}
+.thumb-item{
+   border-radius: 20px;
+}
+.sessao-ofertas-plus .ofertas .item .nome-valor {
+  padding: 1.5rem;
+  background: var(--branco);
+  display: grid;
+  align-content: space-between;
+}
+.sessao-ofertas-plus .ofertas .item .adicionar {
+  position: absolute;
+  height: 2.3rem;
+  right: 2rem;
+  bottom: 1.5rem;
+}
+.sessao-ofertas-plus .ofertas .item .adicionar img {
+  height: 100%;
+}
+.sessao-ofertas-plus .ofertas .item .adicionar.desabilitado img {
+  filter: brightness(0) saturate(100%) invert(67%) sepia(0%) saturate(407%)
+    hue-rotate(150deg) brightness(91%) contrast(83%);
+}
+.sessao-ofertas-plus .ofertas .item .preco {
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+@media screen and (max-width: 767px) {
+  .sessao-ofertas-plus p.titulo {
+    font-size: 1.4rem;
+  }
+}
+
+/*FIM CARRINHO OFERTA PLUS*/
+
+
+/*CARRINHO LOGIN*/
+.sessao-carrinho-login form .btn-verde {
+  margin: 2rem auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.sessao-carrinho-login form .btn-verde img {
+  height: 1.5rem;
+}
+/*FIM CARRINHO LOGIN*/
+/*CARRINHO CONFIRMA DADOS*/
+.sessao-carrinho-confirma-dados form .btn-verde {
+  margin: 2rem auto 0 auto;
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.sessao-carrinho-confirma-dados form .btn-verde img {
+  height: 1.5rem;
+}
+@media screen and (max-width: 575px) {
+  .sessao-carrinho-confirma-dados .btn-verde {
+    width: 100%;
+  }
+}
+/*FIM CARRINHO CONFIRMA DADOS*/
+/*CARRINHO CHECKOUT*/
+.sessao-checkout .formas-pagamento .btn-verde {
+  width: 50%;
+}
+.sessao-checkout .formas-pagamento .menu-formas-pagamento {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+  justify-content: center;
+}
+.sessao-checkout .formas-pagamento .menu-formas-pagamento .forma-pagamento {
+  width: 32%;
+  min-width: 19.1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.sessao-checkout .formas-pagamento .menu-formas-pagamento .forma-pagamento img {
+  height: 2rem;
+}
+.sessao-checkout .formas-pagamento .pagamento-boleto,
+.sessao-checkout .formas-pagamento .pagamento-pix {
+  padding: 2rem 4rem;
+}
+.sessao-checkout .formas-pagamento .pagamento-boleto .passos-boleto,
+.sessao-checkout .formas-pagamento .pagamento-pix .passos-pix {
+  list-style: none;
+  counter-reset: li;
+  margin: 3rem 0;
+}
+.sessao-checkout .formas-pagamento .pagamento-boleto .passos-boleto li::before,
+.sessao-checkout .formas-pagamento .pagamento-pix .passos-pix li::before {
+  content: counter(li) ".";
+  color: var(--roxo-500);
+  font-weight: 700;
+  display: inline-block;
+  width: 1em;
+  font-size: 1.7rem;
+  margin-left: -1em;
+}
+.sessao-checkout .formas-pagamento .pagamento-boleto .passos-boleto li,
+.sessao-checkout .formas-pagamento .pagamento-pix .passos-pix li {
+  counter-increment: li;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.sessao-checkout .formas-pagamento .pagamento-pix .tag {
+  justify-self: center;
+  width: auto;
+  margin: 1rem;
+  font-size: 1.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media screen and (max-width: 575px) {
+  .sessao-checkout .formas-pagamento .menu-formas-pagamento .forma-pagamento {
+    width: 100%;
+  }
+}
+/*FIM CARRINHO CHECKOUT*/
+/*ITENS CARRINHO*/
+.box-itens-carrinho {
+  margin-bottom: 1rem;
+  position: relative;
+  display: grid;
+  grid-template-rows: 2.5rem 1fr;
+  max-height: 23rem;
+  overflow: hidden;
+}
+.box-itens-carrinho p.titulo {
+  font-size: 1.4rem;
+}
+.box-itens-carrinho .itens {
+  overflow-y: scroll;
+}
+.box-itens-carrinho .item {
+  border-radius: 2rem;
+  background-color: #fff;
+  overflow: hidden;
+  gap: 0.5rem;
+  display: flex;
+  margin: 1.5rem 0.6rem;
+  filter: var(--sombra-roxa);
+}
+.box-itens-carrinho .item .thumb-curso {
+  border-bottom-left-radius: 2rem;
+  max-width: 10rem;
+  overflow: hidden;
+}
+.box-itens-carrinho .item .info {
+  background-color: #fff;
+  padding: 1rem 2rem 1rem 0;
+}
+.box-itens-carrinho .item p.preco {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.box-itens-carrinho .excluir {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+}
+.box-itens-carrinho .excluir img {
+  height: 2rem;
+}
+@media screen and (max-width: 400px) {
+  .box-itens-carrinho p.titulo {
+    font-size: 1.1rem;
+  }
+  .box-itens-carrinho .item p.preco {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}
+/*FIM ITENS CARRINHO*/
+/*TOTAL CARRINHO*/
+.box-total {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.box-total .btn-ver-itens {
+  display: none;
+}
+.box-total .btn-verde {
+  margin-top: 1rem;
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.box-total .btn-verde img {
+  height: 1.5rem;
+}
+.box-total .cupom-titulo,
+.box-total .cupom-valor {
+  color: var(--laranja-900);
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.box-total .cupom-valor {
+  text-align: right;
+}
+.box-total .preco-total p {
+  text-align: right;
+  font-size: 1.3rem;
+}
+.box-total p.preco {
+  font-weight: 700;
+  font-size: 2.1rem;
+}
+.box-total .preco {
+  color: var(--laranja-100);
+}
+@media screen and (max-width: 991px) {
+  .box-total .btn-ver-itens {
+    grid-column: 1/3;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+    justify-self: center;
+  }
+  .box-total .btn-ver-itens {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .box-total .preco-total p {
+    font-size: 1.1rem;
+  }
+  .box-total p.preco {
+    font-weight: 700;
+    font-size: 1.9rem;
+  }
+}
+/*FIM TOTAL CARRINHO*/
+/*CUPOM DESCONTO*/
+.box-cupom-desconto {
+  margin-bottom: 1rem;
+}
+.box-cupom-desconto .btn-lilas {
+  width: 100%;
+  margin-top: 1rem;
+}
+/*FIM CUPOM DESCONTO*/
+/*CARRINHO VAZIO*/
+.sessao-carrinho-vazio .box {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+.sessao-carrinho-vazio .box img {
+  filter: brightness(0) saturate(100%) invert(60%) sepia(15%) saturate(0%)
+    hue-rotate(192deg) brightness(97%) contrast(85%);
+  max-width: 100%;
+  height: 20rem;
+  margin: 3rem 0;
+}
+@media screen and (max-width: 400px) {
+  .sessao-carrinho-vazio .box img {
+    height: 13rem;
+    margin: 2rem 0;
+  }
+}
+/*FIM CARRINHO VAZIO*/
+/*NOT FOUND*/
+.sessao-not-found {
+  min-height: 100vh;
+}
+.sessao-not-found .box {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+.sessao-not-found .box img {
+  filter: brightness(0) saturate(100%) invert(60%) sepia(15%) saturate(0%)
+    hue-rotate(192deg) brightness(97%) contrast(85%);
+  max-width: 100%;
+  height: 20rem;
+  margin: 3rem 0;
+}
+.sessao-not-found .botoes {
+  font-size: 1.4rem;
+  display: flex;
+  gap: 1rem;
+  color: var(--verde-500);
+}
+.sessao-not-found .botoes .btn-lilas {
+  display: flex;
+}
+@media screen and (max-width: 400px) {
+  .sessao-not-found .box img {
+    height: 13rem;
+    margin: 2rem 0;
+  }
+}
+/*FIM NOT FOUND*/
+::-webkit-scrollbar {
+  background-color: var(--cinza-50);
+  border-radius: 0;
+  width: 1rem;
+  border-radius: 5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--roxo-100);
+  border-radius: 5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--roxo-80);
+}

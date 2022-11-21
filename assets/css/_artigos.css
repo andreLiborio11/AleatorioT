@@ -1,0 +1,126 @@
+
+/* ARTIGOS INTERRESANTES */
+.artigo-interessante.box-branco {
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  border-radius: 1rem;
+}
+.artigo-interessante.box-branco p.titulo {
+  font-size: 1.3rem;
+}
+.artigo-interessante.box-branco .thumb-artigo {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.artigo-interessante .btn-borda-verde {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: var(--verde-500);
+  padding: 0.2rem 1rem;
+}
+
+/* ARTIGOS MAIS LIDOS */
+.artigo-mais-lido.box-branco {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+.artigo-mais-lido.box-branco p.titulo {
+  font-size: 1.3rem;
+}
+.artigo-mais-lido.box-branco .thumb-artigo {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+.artigo-mais-lido .btn-borda-verde {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: var(--verde-500);
+  padding: 0.2rem 1rem;
+}
+.slides-artigos-mais-lidos {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+  .artigos-mais-lidos {
+    display: none;
+  }
+  .slides-artigos-mais-lidos {
+    display: grid !important;
+  }
+}
+
+/* ARTIGO */
+section.ler-artigo .artigo {
+  text-align: center;
+  border-radius: 3rem;
+  background-color: var(--branco);
+  overflow: hidden;
+  filter: var(--sombra-leve);
+}
+section.ler-artigo .artigo .foto-artigo {
+  max-width: 100%;
+}
+section.ler-artigo .artigo h3 {
+  margin: 2rem 0;
+}
+section.ler-artigo .artigo .conteudo {
+  padding: 1rem 3rem 3rem 3rem;
+}
+section.ler-artigo .artigo p {
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+section.ler-artigo .artigo .autor {
+  display: grid;
+  text-align: left;
+  font-weight: 700;
+  margin-top: 2rem;
+  justify-content: flex-start;
+}
+section.ler-artigo .artigo .autor span {
+  color: var(--roxo-500);
+}
+section.ler-artigo .comentarios {
+  margin-top: 2rem;
+}
+section.ler-artigo .comentarios .comentario {
+  margin: 2rem 0;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+section.ler-artigo .comentarios .comentario .foto-usuario,
+section.ler-artigo .comentarios .escrever-comentario .foto-usuario {
+  width: 5rem;
+}
+section.ler-artigo .comentarios .comentario .dados-comentario {
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+section.ler-artigo .comentarios .escrever-comentario {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 5rem auto;
+  gap: 2rem;
+}
+section.ler-artigo .comentarios .escrever-comentario textarea {
+  resize: none;
+  border: none;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+section.ler-artigo .comentarios .escrever-comentario .btn-verde {
+  grid-column: 2/3;
+  justify-self: end;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+@media screen and (max-width: 575px) {
+  section.ler-artigo .comentarios .comentario {
+    width: 100%;
+  }
+}

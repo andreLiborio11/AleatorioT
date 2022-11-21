@@ -1,0 +1,137 @@
+
+/* LOGIN */
+.login{
+  height: 100vh;
+}
+section.login .tela-login {
+  padding: 3rem 3rem;
+}
+section.login .tela-login .menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+section.login .tela-login .menu button {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0px;
+  color: var(--roxo-500);
+}
+section.login .tela-login .menu button:hover,
+section.login .tela-login .menu button.ativo {
+  border-bottom: 2px solid var(--laranja-900);
+  margin-bottom: -2px;
+}
+section.login .tela-login form {
+  display: none;
+}
+section.login .tela-login form.ativo {
+  display: grid;
+}
+section.login .tela-login label {
+  font-size: 1.2rem;
+}
+section.login .tela-login input {
+  font-size: 1.7rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  color: var(--roxo-500);
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 1rem;
+}
+section.login .tela-login form p {
+  font-size: 1.2rem;
+  color: var(--laranja-100);
+  text-align: center;
+}
+section.login .tela-login .btn-login-facebook {
+  background: #395fc0;
+}
+section.login .tela-login .btn-login-google {
+  background: #e35442;
+}
+section.login .tela-login .btn-login-facebook,
+section.login .tela-login .btn-verde,
+section.login .tela-login .btn-login-google {
+  text-align: center;
+  width: 80%;
+  margin: 0.5rem 10%;
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius);
+  color: var(--branco);
+}
+section.login .tela-login .btn-login-facebook img,
+section.login .tela-login .btn-login-google img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+/* ALTERAR SENHA */
+.sessao-alterar-senha{
+  height: 100vh;
+}
+.sessao-alterar-senha form {
+  margin: 2rem 0;
+}
+.sessao-alterar-senha .btn-verde {
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: var(--radius-60);
+}
+
+/* PERFIL */
+.sessao-perfil{
+  height: 100vh;
+}
+.sessao-perfil .menu-campos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.sessao-perfil .btn-verde {
+  text-align: center;
+}
+.sessao-perfil form p.titulo::after,
+.sessao-perfil form p.titulo::before {
+  content: "";
+  height: 0.2rem;
+  background: var(--cinza-50);
+}
+.sessao-perfil form p.titulo {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  grid-template-columns: 1fr auto 1fr;
+}
+.sessao-perfil .imagem-perfil {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+}
+.sessao-perfil .imagem-perfil .foto {
+  height: 15rem;
+  padding: 3rem;
+  width: 15rem;
+  background-color: var(--roxo-50);
+  border-radius: var(--radius-100);
+  overflow: hidden;
+}
+.sessao-perfil .imagem-perfil .foto img {
+  height: 100%;
+  width: 100%;
+}
+.sessao-perfil .imagem-perfil .btn-branco {
+  width: 100%;
+  margin: 1rem 0;
+}
+@media screen and (max-width: 767px) {
+  .sessao-perfil .imagem-perfil {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
